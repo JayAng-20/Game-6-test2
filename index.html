@@ -1,22 +1,23 @@
 <!doctype html>
-<html lang="zh-Hant-TW">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="翻滾派對 — 純程式生成的物理闖關派對遊戲" />
-    <title>翻滾派對 Tumble Party</title>
-    <script type="module" crossorigin src="./assets/index-7BdaydhL.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BPp-OjZB.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="翻滾派對：七張派對地圖，包含浮遊城世界、叢林古蹟遊樂園、六角失重快速落層與六層極光碎冰，支援單人及本機雙人分割畫面。"
+    />
+    <link rel="icon" href="data:," />
+    <title>翻滾派對 · 浮遊城與叢林古蹟遊樂園</title>
+    <script type="module" crossorigin src="./assets/index-BZRI_y7Q.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/world-CeqXiYg9.js">
+    <link rel="modulepreload" crossorigin href="./assets/preload-helper-HclGiUj8.js">
+    <link rel="stylesheet" crossorigin href="./assets/style-CVDXqQAm.css">
   </head>
   <body>
-    <div id="app">
-      <div id="boot-screen">
-        <div class="boot-inner">
-          <h1 class="boot-title">翻滾派對</h1>
-          <p class="boot-sub">正在初始化物理引擎…</p>
-          <div class="boot-bar"><div class="boot-bar-fill" id="boot-bar-fill"></div></div>
-        </div>
-      </div>
+    <canvas id="game"></canvas>
+    <div id="ui">
+      <div class="loading">正在準備派對…<progress></progress></div>
     </div>
   </body>
 </html>
